@@ -14,14 +14,4 @@ public class RpnCalculatorShould {
         rpnCalculator.operator("+");
         assertEquals(13, rpnCalculator.xRegister());
     }
-
-    @Test
-    public void addAnotherTwoNumbersCorreclty() {
-        RpnCalculator rpnCalculator = new RpnCalculator();
-        rpnCalculator.digit(4);
-        rpnCalculator.enter();
-        rpnCalculator.digit(45);
-        rpnCalculator.operator("+");
-        assertEquals(49, rpnCalculator.xRegister());
-    }
 }
